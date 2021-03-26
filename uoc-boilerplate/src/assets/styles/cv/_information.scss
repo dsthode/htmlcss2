@@ -1,0 +1,79 @@
+.information {
+    display: flex;
+    flex-direction: row;
+    margin-left: 3rem;
+
+    @include responsive(mobile) {
+        flex-direction: column;
+        margin-left: 0;
+        align-items: center;
+    }
+
+    @include responsive(tablet) {
+        align-items: center;
+        flex-direction: column;
+        margin-left: 0;
+    }
+
+    &__photo {
+        width: 30%;
+        object-fit: contain;
+
+        @include responsive(mobile) {
+            width: 60%;
+            margin-bottom: 1rem;
+        }
+
+        @include responsive(tablet) {
+            width: 60%;
+            margin-bottom: 1rem;
+        }
+    }
+
+    &__data {
+        width: 70%;
+
+        @include responsive(mobile) {
+            width: 100%;
+        }
+
+        @include responsive(tablet) {
+            width: 100%;
+        }
+    }
+}
+
+.information-data {
+    list-style-type: none;
+
+    &__key {
+        @extend %default-copy;
+
+        display: inline-block;
+        width: 10rem;
+        font-weight: 700;
+
+        @include responsive(mobile) {
+            width: 100%;
+            display: block;
+            margin-bottom: 0;
+        }
+    }
+
+    &__value {
+        @extend %default-copy;
+
+        @include responsive(mobile) {
+            display: block;
+        }
+    }
+
+    &__link {
+        @extend %default-copy;
+        @extend %default-link;
+
+        @include responsive(mobile) {
+            display: block;
+        }
+    }
+}

@@ -1,0 +1,28 @@
+{
+    "extends": "stylelint-config-recommended-scss",
+    "plugins": [
+        "@namics/stylelint-bem",
+        "stylelint-order"
+    ],
+    "rules": {
+        "plugin/stylelint-bem-namics": {
+            "patternPrefixes": [],
+            "helperPrefixes": []
+        },
+        "order/properties-order": [
+            "class",
+            "id",
+            "name",
+            "data-*",
+            "src",
+            "for",
+            "type",
+            "href",
+            "value",
+            "title",
+            "alt",
+            "role",
+            "aria-*"
+        ]
+    }
+}

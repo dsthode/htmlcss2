@@ -1,0 +1,47 @@
+.projects {
+    &__project-item {
+        border-left: 3px solid darkcyan;
+        margin-bottom: 3rem;
+        padding-left: 1rem;
+
+        @include responsive(mobile) {
+            margin-bottom: 1rem;
+            padding-left: 0;
+            border-left: none;
+            border-bottom: 3px solid darkcyan;
+        }
+    }
+    &__project-item:last-of-type {
+        margin-bottom: 0;
+    }
+}
+
+.project {
+    &__timespan {
+        @extend %default-copy;
+    }
+    &__type {
+        @extend %default-copy;
+    }
+    &__description {
+        @extend %default-copy;
+    }
+    &__keywords {
+        @extend %default-copy;
+        list-style-type: none;
+        display: block;
+    }
+}
+
+.keyword-list {
+    &__item {
+        margin: 0.5rem 0.5rem 0.5rem 0;
+        display: inline-block;
+        background-color: darkcyan;
+        color: white;
+        padding: 0.5rem;
+    }
+    &__item:first-of-type {
+        margin-left: 0;
+    }
+}

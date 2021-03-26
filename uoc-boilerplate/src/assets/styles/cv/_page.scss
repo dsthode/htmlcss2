@@ -1,0 +1,25 @@
+.page {
+    @extend %flex-container;
+    @extend %flex-column;
+    @extend %flex-centered;
+
+    padding: 0;
+    width: 100%;
+    background-color: $background-color;
+
+    &__title {
+        @extend %default-header;
+        font-size: $font-size-page-header;
+        text-align: center;
+        width: 100%;
+        margin-bottom: 0;
+
+        @include responsive(mobile) {
+            font-size: $font-size-page-header-mobile;
+        }
+
+        @include responsive(tablet) {
+            font-size: $font-size-page-header-mobile;
+        }
+    }
+}

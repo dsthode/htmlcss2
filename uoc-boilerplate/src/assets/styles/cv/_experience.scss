@@ -1,0 +1,28 @@
+.experience-list {
+    &__experience-item {
+        border-bottom: 3px solid darkcyan;
+        margin-bottom: 2rem;
+        padding-bottom: 2rem;
+
+        @include responsive(mobile) {
+            margin-bottom: 1rem;
+            padding-bottom: 1rem;
+        }
+    }
+    &__experience-item:last-of-type {
+        border-bottom: none;
+        margin-bottom: 0;
+    }
+}
+
+.experience {
+    &__title {
+        @extend %default-subheader;
+    }
+    &__timespan {
+        @extend %default-copy;
+    }
+    &__description {
+        @extend %default-copy;
+    }
+}

@@ -1,0 +1,65 @@
+%default-header {
+    font-family: $font-family-headers;
+    font-size: $font-size-headers;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    display: inline-block;
+    color: $header-color;
+    clear: right;
+
+    @include responsive(mobile) {
+        font-size: $font-size-headers-mobile;
+    }
+    @include responsive(tablet) {
+        font-size: $font-size-headers-mobile;
+    }
+}
+
+%default-subheader {
+    font-family: $font-family-copy;
+    font-size: $font-size-subheaders;
+    font-weight: 500;
+
+    @include responsive(mobile) {
+        font-size: $font-size-subheaders-mobile;
+    }
+    @include responsive(tablet) {
+        font-size: $font-size-subheaders-mobile;
+    }
+}
+
+%default-copy {
+    font-family: $font-family-copy;
+    font-size: $font-size-copy;
+    font-weight: 400;
+    margin-bottom: 0.5rem;
+
+    @include responsive(mobile) {
+        font-size: $font-size-copy-mobile;
+    }
+    @include responsive(tablet) {
+        font-size: $font-size-copy-mobile;
+    }
+}
+
+%default-link {
+    @extend %default-copy;
+    color: $link-color;
+    text-decoration: underline dashed;
+}
+
+%flex-container {
+    display: flex;
+}
+
+%flex-column {
+    flex-direction: column;
+}
+
+%flex-row {
+    flex-direction: row;
+}
+
+%flex-centered {
+    justify-content: center;
+}
